@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   // get the login of the user for check
   var login = prompt("Please enter the login", login);
   document.getElementById("thelogin").innerHTML = "login: " + login;
-  document.getElementById("avatar").src ="https://cdn.pixabay.com/photo/2017/03/07/13/02/question-mark-2123967_1280.jpg";
+  document.getElementById("avatar").src ="unknown.jpg";
   
   // basic information about the user
     $.getJSON("https://api.github.com/users/" + login, function(data){
